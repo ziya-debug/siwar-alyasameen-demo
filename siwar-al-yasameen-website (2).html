@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siwar Al Yasameen | Premium Dining with Stunning Views in Amman, Jordan</title>
+    <meta name="description" content="Experience exceptional fine dining at Siwar Al Yasameen in Amman. Enjoy authentic Jordanian cuisine, premium Wagyu dishes, and breathtaking terrace views. Rated 4.5 stars by 2,700+ guests.">
+    <meta name="keywords" content="Best Restaurant Amman, Terrace Dining Amman, Family Restaurant Jordan, Fine Dining Jordan, Premium Restaurant Amman, Jordanian Cuisine, Wagyu Beef Amman, Restaurant with View Jordan, Best Food Amman, Siwar Al Yasameen">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #1a4d2e;
+            --primary-dark: #0f2919;
+            --gold: #d4af37;
+            --cream: #faf8f3;
+            --text-dark: #2c3e50;
+            --text-light: #6c757d;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(15, 41, 25, 0.98);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 20px;
+        }
+        
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        .logo-arabic {
+            font-size: 0.9rem;
+            display: block;
+            color: var(--cream);
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1rem;
+            letter-spacing: 0.8px;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 75%;
+            max-width: 320px;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            box-shadow: -5px 0 25px rgba(0,0,0,0.5);
+            transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 999;
+            padding: 5rem 2rem 2rem;
+            overflow-y: auto;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mobile-menu li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .mobile-menu a {
+            display: block;
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 1.2rem 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+            letter-spacing: 0.5px;
+        }
+        
+        .mobile-menu a:hover,
+        .mobile-menu a:active {
+            background: rgba(212, 175, 55, 0.15);
+            border-left-color: var(--gold);
+            color: var(--gold);
+            transform: translateX(5px);
+        }
+        
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 998;
+        }
+        
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(15, 41, 25, 0.95), rgba(26, 77, 46, 0.92)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%231a4d2e;stop-opacity:1" /><stop offset="100%" style="stop-color:%230f2919;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad)" width="1200" height="600"/><circle cx="200" cy="150" r="100" fill="%23d4af37" opacity="0.05"/><circle cx="1000" cy="450" r="150" fill="%23d4af37" opacity="0.05"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 75px;
+            position: relative;
+            padding: 3rem 0;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.25;
+            color: #fff;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            color: var(--gold);
+            font-style: italic;
+            line-height: 1.6;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .social-proof {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(212, 175, 55, 0.15));
+            border: 2px solid rgba(212, 175, 55, 0.8);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1.2rem 3rem;
+            margin: 2rem 0;
+            border-radius: 60px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--gold);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            padding: 1.2rem 3rem;
+            border-radius: 60px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            letter-spacing: 0.8px;
+            display: inline-block;
+            text-align: center;
+            min-height: 56px;
+            font-weight: 600;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #d4af37 0%, #c19b2e 100%);
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #e6c24d 0%, #d4af37 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--cream);
+            border: 2px solid var(--cream);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+        
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        /* Welcome Section */
+        #welcome {
+            background: var(--cream);
+        }
+        
+        .welcome-text {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-dark);
+            text-align: center;
+        }
+        
+        /* Signature Dishes */
+        .dishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .dish-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .dish-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .dish-image {
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        .dish-content {
+            padding: 2rem;
+        }
+        
+        .dish-name {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .dish-price {
+            color: var(--gold);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .dish-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Why Choose Us */
+        #why-choose {
+            background: var(--primary-dark);
+            color: white;
+        }
+        
+        #why-choose .section-title {
+            color: var(--gold);
+        }
+        
+        #why-choose .section-subtitle {
+            color: var(--cream);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .feature p {
+            color: var(--cream);
+            line-height: 1.8;
+        }
+        
+        /* Menu Section */
+        #menu {
+            background: white;
+        }
+        
+        .menu-category {
+            margin-bottom: 4rem;
+        }
+        
+        .category-title {
+            font-size: 1.65rem;
+            color: var(--primary-dark);
+            border-bottom: 3px solid var(--gold);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            width: 100%;
+        }
+        
+        .menu-items {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .item-info {
+            flex: 1;
+        }
+        
+        .item-name {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 0.4rem;
+        }
+        
+        .item-description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .item-price {
+            font-size: 1.3rem;
+            color: var(--gold);
+            font-weight: bold;
+            margin-left: 0;
+            white-space: nowrap;
+            align-self: flex-start;
+        }
+        
+        /* About Section */
+        #about {
+            background: var(--cream);
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 2;
+            color: var(--text-dark);
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-highlight {
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid var(--gold);
+            margin: 2rem 0;
+            font-style: italic;
+        }
+        
+        /* Contact Section */
+        #contact {
+            background: var(--primary);
+            color: white;
+        }
+        
+        #contact .section-title {
+            color: var(--gold);
+        }
+        
+        #contact .section-subtitle {
+            color: var(--cream);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item h3 {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item p {
+            color: var(--cream);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .contact-item a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-item a:hover {
+            color: var(--cream);
+        }
+        
+        .reservation-cta {
+            background: var(--gold);
+            color: var(--primary-dark);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .reservation-cta h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .reservation-cta p {
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: var(--cream);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            nav .container {
+                padding: 1rem 1.25rem;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .logo-arabic {
+                font-size: 0.8rem;
+            }
+            
+            .hero {
+                margin-top: 70px;
+                min-height: 85vh;
+                padding: 2rem 0;
+                background-attachment: scroll;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                margin-bottom: 1.25rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+                padding: 0 0.5rem;
+            }
+            
+            .social-proof {
+                font-size: 0.95rem;
+                padding: 1rem 2rem;
+                margin: 1.75rem 0;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1.25rem;
+                padding: 0 1.5rem;
+            }
+            
+            .btn {
+                width: 100%;
+                padding: 1.15rem 2rem;
+                font-size: 1.05rem;
+            }
+            
+            section {
+                padding: 3.5rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.85rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.05rem;
+                margin-bottom: 2.25rem;
+                padding: 0 1rem;
+            }
+            
+            .welcome-text {
+                font-size: 1.05rem;
+                line-height: 1.85;
+            }
+            
+            .dishes-grid {
+                grid-template-columns: 1fr;
+                gap: 2.25rem;
+            }
+            
+            .dish-name {
+                font-size: 1.45rem;
+            }
+            
+            .dish-price {
+                font-size: 1.3rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2.75rem;
+            }
+            
+            .feature-icon {
+                font-size: 3.25rem;
+            }
+            
+            .menu-category {
+                margin-bottom: 3.5rem;
+            }
+            
+            .category-title {
+                font-size: 1.55rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .menu-items {
+                gap: 0;
+            }
+            
+            .menu-item {
+                padding: 1.35rem 0.75rem;
+            }
+            
+            .item-name {
+                font-size: 1.2rem;
+            }
+            
+            .item-description {
+                font-size: 1rem;
+                line-height: 1.65;
+            }
+            
+            .item-price {
+                font-size: 1.35rem;
+                margin-top: 0.6rem;
+            }
+            
+            .about-content {
+                font-size: 1.05rem;
+                line-height: 1.9;
+            }
+            
+            .about-highlight {
+                padding: 1.65rem;
+                margin: 1.65rem 0;
+                font-size: 1.05rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2.75rem;
+            }
+            
+            .contact-icon {
+                font-size: 2.75rem;
+            }
+            
+            .contact-item h3 {
+                font-size: 1.25rem;
+            }
+            
+            .contact-item p {
+                font-size: 1.05rem;
+            }
+            
+            .reservation-cta {
+                padding: 2rem;
+            }
+            
+            .reservation-cta h3 {
+                font-size: 1.55rem;
+            }
+        }
+        
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.65rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .social-proof {
+                font-size: 0.88rem;
+                padding: 0.9rem 1.75rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .btn {
+                padding: 1.05rem 1.75rem;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">
+                Siwar Al Yasameen
+                <span class="logo-arabic">مطعم سوار الياسمين</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">🏠 Home</a></li>
+            <li><a href="#menu" onclick="toggleMenu()">🍽️ Menu</a></li>
+            <li><a href="#about" onclick="toggleMenu()">ℹ️ About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">📞 Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Where Authentic Flavors Meet<br>Amman's Most Breathtaking Views</h1>
+            <p class="hero-subtitle">Experience the art of fine dining on our elegant terrace, where every meal<br>becomes an unforgettable memory beneath the Jordanian sky</p>
+            
+            <div class="social-proof">
+                ⭐ Trusted by 2,700+ Happy Guests • Rated 4.5 Stars
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Reserve Your Table</a>
+                <a href="#menu" class="btn btn-secondary">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <div class="container">
+            <h2 class="section-title">Welcome to Siwar Al Yasameen</h2>
+            <p class="section-subtitle">A Celebration of Jordanian Hospitality & Culinary Excellence</p>
+            
+            <div class="welcome-text">
+                <p>At Siwar Al Yasameen, we invite you to discover a dining experience that honors the rich traditions of Jordanian hospitality while embracing the refinement of modern culinary artistry. Nestled along Jordan Street in the heart of Amman, our restaurant has become a cherished destination for those who seek not just a meal, but a moment of elegance.</p>
+                
+                <p>From our sun-drenched terrace with sweeping views to our warmly appointed indoor dining spaces, every corner of Siwar Al Yasameen reflects our commitment to excellence. Our chefs work with the finest ingredients—premium Wagyu beef, hand-picked seasonal vegetables, and aromatic spices—to create dishes that speak to both heritage and innovation.</p>
+                
+                <p>Whether you're celebrating a milestone with family, hosting colleagues, or simply savoring an afternoon with friends, we welcome you to experience the bracelet of jasmine that has made us one of Amman's most beloved dining destinations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes -->
+    <section id="signature">
+        <div class="container">
+            <h2 class="section-title">Our Signature Creations</h2>
+            <p class="section-subtitle">Expertly crafted dishes that define the Siwar Al Yasameen experience</p>
+            
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image">🍖</div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Fukharet Alshish</h3>
+                        <p class="dish-price">11.00 JOD</p>
+                        <p class="dish-description">A masterpiece of flavor—tender BBQ shish tawook layered with our special sauce and melted cheese, baked to perfection in a traditional clay pot. This signature dish embodies our commitment to blending authentic technique with exceptional taste.</p>
+                    </div>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-image">🥗</div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Siwar Al Yasameen Salad</h3>
+                        <p class="dish-price">6.00 JOD</p>
+                        <p class="dish-description">Our namesake creation featuring fresh arugula, cherry tomatoes, sweet onion, dried apricots, cranberries, and walnuts, crowned with delicate goat labneh balls and finished with olive oil and lemon. A harmonious balance of textures and flavors.</p>
+                    </div>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-image">🔥</div>
+                    <div class="dish-content">
+                        <h3 class="dish-name">Mix BBQ Grill</h3>
+                        <p class="dish-price">12.00 JOD</p>
+                        <p class="dish-description">A celebration on a platter—perfectly grilled shoqaf, kabab, and shish tawook served together. Each skewer is grilled over an open flame to achieve the ideal char and tenderness that has made our mashwa famous throughout Amman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Siwar Al Yasameen</h2>
+            <p class="section-subtitle">What sets us apart as Amman's premier dining destination</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🌅</div>
+                    <h3>The Unforgettable View</h3>
+                    <p>Dine on our expansive terrace overlooking the beauty of Amman. Whether it's a leisurely lunch bathed in afternoon light or an intimate dinner under the stars, our setting transforms every meal into a memorable experience. Our guests consistently describe the atmosphere as "beautiful" and "unforgettable."</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🥩</div>
+                    <h3>Premium Ingredients</h3>
+                    <p>We source only the finest—authentic Wagyu beef for our shawerma and burgers, fresh locally-grown produce, and carefully selected spices. From our hand-squeezed juices to our house-made sauces, every element is prepared with meticulous attention to quality. Our commitment to excellence is reflected in every bite.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>A Welcoming Family Atmosphere</h3>
+                    <p>At Siwar Al Yasameen, you're not just a guest—you're part of our family. Our professional staff is dedicated to ensuring that every visit exceeds expectations, from the moment you arrive until the last sip of our delicious coffee. We specialize in gatherings that matter, with ample space for celebrations large and small.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu -->
+    <section id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Complete Menu</h2>
+            <p class="section-subtitle">A journey through authentic flavors and culinary innovation</p>
+            
+            <!-- Salads -->
+            <div class="menu-category">
+                <h3 class="category-title">🥗 Salads</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Tabbouleh</div>
+                            <div class="item-description">Parsley, tomato, onion, bulgur, olive oil, lemon</div>
+                        </div>
+                        <div class="item-price">4.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Tabbouleh Quinoa</div>
+                            <div class="item-description">Rocca, quinoa, pomegranate, onion, tomato, olive oil, lemon</div>
+                        </div>
+                        <div class="item-price">5.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fattoush</div>
+                            <div class="item-description">Cucumber, tomato, lettuce, mint, onion, pepper, crispy bread, olive oil, pomegranate molasses</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Rocca Pineapple Salad</div>
+                            <div class="item-description">Rocca, pineapple, cranberry, walnut, pomegranate, parmesan, balsamic sauce</div>
+                        </div>
+                        <div class="item-price">6.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Rocca Dates Salad</div>
+                            <div class="item-description">Rocca, quinoa, orange, dates, feta cheese, special sauce</div>
+                        </div>
+                        <div class="item-price">6.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Siwar Al Yasameen Salad</div>
+                            <div class="item-description">Arugula, cherry tomato, onion, dried apricot, cranberry, walnut, goat labneh balls, olive oil, lemon</div>
+                        </div>
+                        <div class="item-price">6.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Pomelo/Grapefruit Salad</div>
+                            <div class="item-description">Iceberg lettuce, pomelo or grapefruit, corn, mushroom, cheese, special sauce</div>
+                        </div>
+                        <div class="item-price">6.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Apple Mastic Salad</div>
+                            <div class="item-description">Iceberg lettuce, mushroom, green apple, beetroot, mastic sauce</div>
+                        </div>
+                        <div class="item-price">6.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Nacho Salad</div>
+                            <div class="item-description">Nacho chips, cherry tomato, red beans, corn, iceberg lettuce, cheddar cheese, Mexican sauce</div>
+                        </div>
+                        <div class="item-price">5.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Greek Salad</div>
+                            <div class="item-description">Cucumber, tomato, onion, sweet pepper, black olives, feta cheese, olive oil, lemon</div>
+                        </div>
+                        <div class="item-price">5.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Caesar Salad</div>
+                            <div class="item-description">Iceberg lettuce, croutons, parmesan, caesar sauce (Add chicken +2.50 JOD)</div>
+                        </div>
+                        <div class="item-price">4.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Crab Salad</div>
+                            <div class="item-description">Cucumber, carrot, lettuce, orange, corn, crab with mustard sauce</div>
+                        </div>
+                        <div class="item-price">6.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Eggplant Salad</div>
+                            <div class="item-description">Eggplant, tomato, basil, sweet pepper, parsley, feta cheese, green onion, vinaigrette</div>
+                        </div>
+                        <div class="item-price">5.25 JOD</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold Appetizers -->
+            <div class="menu-category">
+                <h3 class="category-title">🍽️ Cold Appetizers</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shankleesh</div>
+                            <div class="item-description">Mix of special cheese with herbs and spices, served with tomato/onion</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Vine Leaves</div>
+                            <div class="item-description">Stuffed with rice, olive oil, lemon</div>
+                        </div>
+                        <div class="item-price">4.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Hummus</div>
+                            <div class="item-description">Chickpeas with sesame paste</div>
+                        </div>
+                        <div class="item-price">3.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Hummus Rehan</div>
+                            <div class="item-description">Chickpeas with basil paste</div>
+                        </div>
+                        <div class="item-price">3.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Hummus Beiruti</div>
+                            <div class="item-description">Chickpeas, sesame paste, tomato, parsley, garlic</div>
+                        </div>
+                        <div class="item-price">3.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mutabbal Shamandar</div>
+                            <div class="item-description">Beetroot mutabbal with sesame paste</div>
+                        </div>
+                        <div class="item-price">4.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mafrouket Batenjan Trabolsi</div>
+                            <div class="item-description">Eggplant, sesame paste, onion, garlic, sweet pepper, pomegranate molasses</div>
+                        </div>
+                        <div class="item-price">4.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Turkish Kubbeh - Chi Kofte</div>
+                            <div class="item-description">Bulgur, turkish spices, lettuce, pomegranate molasses</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Muhamarah Quinoa</div>
+                            <div class="item-description">Muhamarah, quinoa, walnut, pomegranate</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mutabbal</div>
+                            <div class="item-description">Eggplant mutabbal with sesame paste and pomegranate</div>
+                        </div>
+                        <div class="item-price">3.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Baba Ghanouj</div>
+                            <div class="item-description">Grilled eggplant, sweet pepper, garlic, pomegranate, onion, olive oil</div>
+                        </div>
+                        <div class="item-price">4.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Rainbow</div>
+                            <div class="item-description">Mashed potato, carrot, red cabbage, peas, mayonnaise, lemon sauce</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mutabbal Potato</div>
+                            <div class="item-description">Mashed potato, garlic, parsley, tarator sauce</div>
+                        </div>
+                        <div class="item-price">4.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kubbeh Nayeh</div>
+                            <div class="item-description">Fresh raw meat, bulgur, onion, spices</div>
+                        </div>
+                        <div class="item-price">8.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kubbeh Orfalieh</div>
+                            <div class="item-description">Spicy raw meat mix</div>
+                        </div>
+                        <div class="item-price">8.50 JOD</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hot Appetizers -->
+            <div class="menu-category">
+                <h3 class="category-title">🔥 Hot Appetizers</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Chicken Liver with Pomegranate Molasses</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fried Kubbeh (Piece)</div>
+                        </div>
+                        <div class="item-price">1.65 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kubbeh Sajeyeh (4 Pieces)</div>
+                        </div>
+                        <div class="item-price">4.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Othmalyet Dajaj (Piece)</div>
+                        </div>
+                        <div class="item-price">1.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Cheese Burak (Piece)</div>
+                        </div>
+                        <div class="item-price">1.15 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Soujok</div>
+                            <div class="item-description">Sausage with lemon</div>
+                        </div>
+                        <div class="item-price">6.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Hummus with Meat</div>
+                        </div>
+                        <div class="item-price">6.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Hummus with Soujok</div>
+                        </div>
+                        <div class="item-price">6.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mushroom Mutaffa</div>
+                            <div class="item-description">Garlic, lemon, coriander</div>
+                        </div>
+                        <div class="item-price">4.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mushroom with Cheese</div>
+                        </div>
+                        <div class="item-price">6.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Halloumi (Grilled or Fried)</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Frekeh with Mushroom & Cream</div>
+                        </div>
+                        <div class="item-price">5.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Awamet Shrimps</div>
+                            <div class="item-description">Fried tempura shrimps</div>
+                        </div>
+                        <div class="item-price">9.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Awamet Dajaj</div>
+                            <div class="item-description">Fried tempura chicken</div>
+                        </div>
+                        <div class="item-price">5.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Qalayet Bandoura bel Lahmeh</div>
+                            <div class="item-description">Tomato pan with meat</div>
+                        </div>
+                        <div class="item-price">6.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Chicken Wings (Grilled)</div>
+                        </div>
+                        <div class="item-price">4.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Chicken Wings (Provencal or Buffalo)</div>
+                        </div>
+                        <div class="item-price">5.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Batata Harrah</div>
+                            <div class="item-description">Lebanese spicy potatoes</div>
+                        </div>
+                        <div class="item-price">4.25 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">French Fries</div>
+                        </div>
+                        <div class="item-price">3.25 JOD</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Dishes -->
+            <div class="menu-category">
+                <h3 class="category-title">🍛 Main Dishes</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shish Barak</div>
+                            <div class="item-description">Served with white rice</div>
+                        </div>
+                        <div class="item-price">9.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kubbeh Labanyeh</div>
+                            <div class="item-description">Served with white rice</div>
+                        </div>
+                        <div class="item-price">9.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fukharet Alshish</div>
+                            <div class="item-description">BBQ shish tawook, special sauce, cheese</div>
+                        </div>
+                        <div class="item-price">11.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fukharet Meat Slices</div>
+                            <div class="item-description">Veal, mushroom, potato, garlic, gravy</div>
+                        </div>
+                        <div class="item-price">12.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fukharet Chicken Slices with Cream</div>
+                        </div>
+                        <div class="item-price">11.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shawerma Beef</div>
+                            <div class="item-description">Wagyu veal, tarator, pickles</div>
+                        </div>
+                        <div class="item-price">15.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shawerma Chicken</div>
+                            <div class="item-description">Served with fries, pickles, garlic sauce</div>
+                        </div>
+                        <div class="item-price">11.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fateret Al Yasameen</div>
+                            <div class="item-description">Wagyu beef rolled with potato slice, baked</div>
+                        </div>
+                        <div class="item-price">17.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Sajeyet Lahmeh</div>
+                            <div class="item-description">Meat cubes, onion, pepper, dough cover</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Seneyet Koftah</div>
+                            <div class="item-description">Tomato or Tahini</div>
+                        </div>
+                        <div class="item-price">11.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Indian Chicken Tawaya</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Grilled Fillet of Beef</div>
+                            <div class="item-description">With mushroom or gravy sauce</div>
+                        </div>
+                        <div class="item-price">14.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Grilled Chicken Breast</div>
+                            <div class="item-description">Various sauces</div>
+                        </div>
+                        <div class="item-price">9.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mexican Chicken Breast</div>
+                        </div>
+                        <div class="item-price">10.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fettuccini Chicken</div>
+                        </div>
+                        <div class="item-price">8.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fettuccini Shrimp</div>
+                        </div>
+                        <div class="item-price">11.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Classic Burger</div>
+                            <div class="item-description">Wagyu beef</div>
+                        </div>
+                        <div class="item-price">8.25 JOD</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BBQ Grill -->
+            <div class="menu-category">
+                <h3 class="category-title">🔥 BBQ Grill (Mashwa)</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Mix BBQ Grill</div>
+                            <div class="item-description">Shoqaf, Kabab, Shish Tawook</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shish Tawook</div>
+                        </div>
+                        <div class="item-price">8.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kabab</div>
+                        </div>
+                        <div class="item-price">9.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shoqaf</div>
+                            <div class="item-description">Meat cubes</div>
+                        </div>
+                        <div class="item-price">14.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kastalita</div>
+                            <div class="item-description">Lamb cutlets</div>
+                        </div>
+                        <div class="item-price">13.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Logmet Siwar Al Yasameen</div>
+                            <div class="item-description">Kabab dough rolls with yogurt/red sauce</div>
+                        </div>
+                        <div class="item-price">11.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kabab Fattah</div>
+                        </div>
+                        <div class="item-price">11.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kabab Kheshkhash</div>
+                        </div>
+                        <div class="item-price">10.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Ali Nazik - Tawook</div>
+                        </div>
+                        <div class="item-price">10.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Ali Nazik - Kabab</div>
+                        </div>
+                        <div class="item-price">11.75 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Grilled Chicken (Whole)</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Arayes Lahmeh</div>
+                        </div>
+                        <div class="item-price">5.75 JOD</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seafood -->
+            <div class="menu-category">
+                <h3 class="category-title">🦐 Seafood</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Grilled Salmon Fillet</div>
+                        </div>
+                        <div class="item-price">16.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Grilled Shrimp</div>
+                        </div>
+                        <div class="item-price">16.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shrimps Mutaffa</div>
+                        </div>
+                        <div class="item-price">11.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Shrimps with Fennel Cream</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Indian Shrimp</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Dennis Fish (Fried/Grilled)</div>
+                        </div>
+                        <div class="item-price">12.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Fish & Chips</div>
+                        </div>
+                        <div class="item-price">10.00 JOD</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h3 class="category-title">🍰 Desserts</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Chocolate Fondant</div>
+                        </div>
+                        <div class="item-price">5.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Um Ali</div>
+                        </div>
+                        <div class="item-price">5.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Othmalyeh with Qishtah</div>
+                        </div>
+                        <div class="item-price">6.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Othmalyeh with Ice Cream</div>
+                        </div>
+                        <div class="item-price">5.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Al Yasameen Cloud</div>
+                            <div class="item-description">Cotton candy presentation</div>
+                        </div>
+                        <div class="item-price">6.50 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Kunafah</div>
+                        </div>
+                        <div class="item-price">5.00 JOD</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <div class="item-name">Halawet Al Jibn</div>
+                        </div>
+                        <div class="item-price">5.00 JOD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <p class="section-subtitle">A Legacy of Excellence on Jordan Street</p>
+            
+            <div class="about-content">
+                <p>The name Siwar Al Yasameen—"Bracelet of Jasmine"—evokes an image both delicate and enduring, much like the restaurant itself. Like the intertwined blossoms of jasmine that form an elegant bracelet, our establishment weaves together the threads of tradition, quality, and warm hospitality into an experience that has graced the Amman dining scene with distinction.</p>
+                
+                <p>Since our doors first opened along Jordan Street, near Abu Nuseir and just before Amman Arab University, we have been guided by a singular vision: to create a space where the essence of Jordanian culinary heritage meets the sophistication of contemporary dining. The scent of jasmine, which perfumes our gardens and inspires our name, serves as a constant reminder of the care and attention we bring to every detail.</p>
+                
+                <div class="about-highlight">
+                    "At Siwar Al Yasameen, we believe that dining is about more than sustenance—it's about creating memories that linger long after the last bite, conversations that flow as freely as our aromatic coffee, and moments that bring families and friends closer together."
+                </div>
+                
+                <p>Our location was chosen with intention. Perched to offer sweeping views of Amman's ever-evolving landscape, our terrace has become a destination in itself—a place where the city unfolds before you as you dine. Whether you choose the airy elegance of our terrace or the intimate warmth of our indoor dining rooms, you'll find spaces designed for celebration, reflection, and connection.</p>
+                
+                <p>The trust of over 2,700 guests who have shared their experiences and awarded us a 4.5-star rating speaks to the consistency of our commitment. From our professional staff who anticipate your every need to our chefs who treat each dish as a work of art, every member of the Siwar Al Yasameen family is dedicated to exceeding expectations.</p>
+                
+                <p>We take pride in our extensive menu, which honors both time-tested recipes and innovative creations. Our kitchen works exclusively with premium ingredients—from the Wagyu beef that elevates our shawerma and burgers to the fresh, locally-sourced produce that gives life to our salads. Each dish tells a story, whether it's the comforting nostalgia of our Shish Barak or the creative flair of our signature Al Yasameen Cloud dessert.</p>
+                
+                <p>Today, Siwar Al Yasameen stands as more than a restaurant—it is a landmark, a gathering place, and a testament to what happens when passion, quality, and hospitality intertwine. We invite you to become part of our story, to add your own memories to the bracelet we continue to weave together, one unforgettable meal at a time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <p class="section-subtitle">We look forward to welcoming you</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Jordan Street, Amman<br>Near Abu Nuseir<br>Before Amman Arab University</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>Reservations</h3>
+                    <p><a href="tel:+962798055805">+962 7 9805 5805</a></p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">We recommend calling ahead for large groups</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Hours</h3>
+                    <p>Open Daily<br>From 1:00 PM</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Dine-in • Terrace • Takeaway • Delivery</p>
+                </div>
+            </div>
+            
+            <div class="reservation-cta">
+                <h3>Planning a Special Celebration?</h3>
+                <p>Our spacious indoor and terrace areas are perfect for family gatherings, business dinners, and special occasions. Contact us to reserve your space and let us make your event truly memorable.</p>
+                <a href="tel:+962798055805" class="btn btn-primary">Call to Reserve</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Siwar Al Yasameen Restaurant</strong> • مطعم سوار الياسمين</p>
+            <p>Jordan Street, Amman, Jordan</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">© 2026 Siwar Al Yasameen. Premium Dining Experience.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Change icon
+            if (mobileMenu.classList.contains('active')) {
+                menuToggle.innerHTML = '✕';
+            } else {
+                menuToggle.innerHTML = '☰';
+            }
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                if (mobileMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
